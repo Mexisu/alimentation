@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+produit-list {
+  .containerDeListe {
+    width: 840px;
+    height: 40px;
+
+
+    .produitLigne {
+      width: 100%;
+      height: 40px;
+      display:block;
+
+      app-composition-details {
+        float: right;
+      }
+    }
+  }
+
+  app-composition-details {
+    
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+.mr-3 {
+  width: 10em;
+  height: 10em;
+}

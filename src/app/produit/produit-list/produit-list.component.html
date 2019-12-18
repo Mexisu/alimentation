@@ -1,0 +1,36 @@
+<!-- <div>
+  <table>
+    <thead>
+      <tr>
+        <td></td>
+        <td class="badge badge-pill badge-primary">id</td>
+        <td class="badge badge-pill badge-secondary">nom</td>
+        <td class="badge badge-pill badge-success">description</td>
+        <td class="badge badge-pill badge-danger">categorie</td>
+        <td class="badge badge-pill badge-warning">gluten</td>
+        <td class="badge badge-pill badge-info">ingredients</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="media" *ngFor="let p of produitsAffichees">
+        <img src="{{ p.imageUrl }}" class="mr-3" alt="..." />
+        <td class="media-body"></td>
+        <td>{{ p.id }}</td>
+        <td>{{ p.nom }}</td>
+        <td>{{ p.description }}</td>
+        <td>{{ p.categorie }}</td>
+        <td>{{ p.gluten }}</td>
+        <td>{{ p.ingredients }}</td>
+        <br />
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngFor="let c of compositions"></div>
+</div> -->
+
+<div class="containerDeListe">
+  <div class="produitLigne" *ngFor="let p of produitsAffichees">
+    <app-composition-details [produit]="p"></app-composition-details>
+  </div>
+</div>
